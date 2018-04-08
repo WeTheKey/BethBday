@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ p{color:white;}
+ a{color:yellow;}
+</style>
+</head>
+<body style="background-color:rgb(35,35,35);" >
+  <h1 style="background-color:tomato; color:blue;font-size:50px">
+    <center><b>Question 1</b></center>
+    </h1>
+    <h2 style="color:white">
+      Let's start with an easy one, what is this?  (✪‿✪)ノ
+      </h2>
+     <center><img src="weed.jpg"></center>
+
+    <br>
+  <h1 style="background-color:orange; color:yellow;" >
+    <center><b>Check your answer</b></center>
+    </h1>
+    <br>
+    <center>
+    <input id="sex">
+    <button type="button" onclick="verifier()">Check</button>
+    </center>
+   	<h3 style="color:white"  id="dick" ></h3>
+
+
+    <script>
+    function verifier() {
+   		var check, result, linkbutton;
+   		check=document.getElementById("sex").value;
+   		if(check=="weed")
+   		{
+   		text="Correct!";
+   		linkbutton=document.createElement("a");
+   		linkbutton.setAttribute("href", "grey7.html");
+   		linkbutton.innerHTML = "NEXT" ;
+   		document.body.appendChild(linkbutton) ;
+   		}
+   		else
+   		text="Wrong!";
+   		document.getElementById("dick").innerHTML = text;
+
+    }
+
+   	</script>
+
+
+</body>
+</html>
